@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application rules
+- Inventory mutations and private reads use authenticated server functions with membership RLS; organization creation is an atomic authenticated database function to prevent orphan workspaces.
+- The dashboard's public routes display an explicitly labeled simulation when signed out; authenticated records are loaded only from protected functions and never seeded during page loads.
+- Forecast calculations are centralized in the pure inventory module and tested; refills are distinct events, rates require nonnegative refill-adjusted consumption across timestamped reading intervals.
+- Manager profiles are created by an auth lifecycle trigger and scoped to the user's own account; organization memberships remain a separate protected table.

@@ -1,0 +1,1 @@
+import {createFileRoute} from '@tanstack/react-router';import {PasswordScreen} from '@/components/password-screen';import {pageHead} from '@/lib/page-head';export const Route=createFileRoute('/forgot-password')({head:()=>pageHead('Password recovery','Request a secure TrayWise password reset link.'),component:()=> <PasswordScreen/>});

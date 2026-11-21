@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1795295092894,
+      "tag": "0000_traywise_inventory",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795295120473,
+      "tag": "0001_manager_profiles",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1795295346948,
+      "tag": "0002_tighten_function_access",
+      "breakpoints": true
+    }
+  ]
+}
